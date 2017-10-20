@@ -1,0 +1,234 @@
+body{
+
+}
+p{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+/*header*/
+.header{
+    width: 100%;
+    height: 450px;
+    background: url(imagem1.jpg) top center;
+    background-size: contain;
+    opacity: 0.65;
+}
+.flex{
+
+}
+/*logo*/
+.header img.header-logo{
+}
+/*menu*/
+.header ul.header-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.18);
+    float: right;
+    display: flex;
+}
+.header ul.header-menu li{
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.5s;
+    border-left: 1px solid rgba(0, 0, 0, 0.50);
+}
+.header ul.header-menu li:hover{
+    background-color: rgba(255, 0, 0, 0.75);
+    transition: 0.5s
+}
+.header ul.header-menu li a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*imagem perfil*/
+.header .header-img-perfil{
+    display: block;
+    margin: 60px auto 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.31);
+}
+.header .header-img-perfil img{
+    max-width: 100px;
+    max-height: 100px;
+}
+/*titulo*/
+.header .header-titulo{
+    width: 100%; 
+    text-align: center;
+}
+.header .header-titulo h1{
+    margin: 0;
+    color:#fff;
+}
+/*descrição*/
+.header .header-texto {
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+    color:#fff;
+}
+/*----- ----- ----- ----- ----- */
+/* formação */
+.feature{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+
+} 
+.feature .feature-titulo{
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    text-align: center; 
+    text-transform: uppercase;
+}
+.feature .feature-span{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.75);
+    display: block;
+    width: 165px;
+    margin: 0 auto 20px;
+}
+.feature .feature-icon{
+    display: block;
+    margin: 15px auto;
+}
+.feature-descricao{
+    text-align: center;
+    Color: rgba(0, 0, 0, 0.40);
+    font-family: monospace;
+}
+/*----- ----- ----- ----- ----- */
+/* trabalhos */
+.work{
+    width: 100%;
+    padding: 80px 0;
+    background-color: rgb(141, 164, 198);
+}
+.work .work-titulo{
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    text-align: center; 
+    text-transform: uppercase;
+    color: white;
+}
+.work .work-span{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.75);
+    display: block;
+    width: 165px;
+    margin: 0 auto 20px;
+}
+.work .work-img{
+    display: block;
+    margin: auto;
+}
+.work .work-paragrafos{
+    text-align: center;
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.71);
+}
+/*----- ----- ----- ----- ----- */
+/* portifolio */
+.portifolio{
+    width: 100%;
+    padding: 80px 0;
+    background-color: rgb(72, 72, 72);
+}
+.portifolio .portifolio-projetos{
+    background-color: rgba(255, 255, 255, 0.91);
+    padding: 20px 0;
+    border-radius: 5px;
+}
+.portifolio .portifolio-img{
+    display: block;
+    margin: auto;
+}
+.portifolio .portifolio-titulo{ 
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    text-align: center; 
+    text-transform: uppercase;
+    color: white;
+}
+.portifolio .portifolio-span{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.75);
+    display: block;
+    width: 165px;
+    margin: 0 auto 20px;
+}
+.portifolio .portifolio-nome{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    /* margin: 0px; */
+}
+.portifolio .portifolio-descricao{
+    text-align: justify;
+    font-family: fantasy;
+    color: rgba(50, 50, 50 ,0.8);
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+/*----- ----- ----- ----- ----- */
+/* conhecimento */
+.conhecimento{
+    width: 100%;
+    padding: 80px 0;
+}
+.conhecimento .conhecimento-titulo{ 
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    text-align: center; 
+    text-transform: uppercase; 
+    color: rgb(72, 72, 72);
+}
+.conhecimento .conhecimento-span{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.75);
+    display: block;
+    width: 165px;
+    margin: 0 auto 20px;
+}
+.conhecimento img{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+/*----- ----- ----- ----- ----- */
+/* contato */
+.contato{
+    width: 100%;
+    padding: 80px 0; 
+    background-color: rgb(172, 172, 172);   
+}
+.contato .contato-img{
+    display: block;
+    margin: auto;
+}
+.contato .contato-titulo{ 
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    text-align: center; 
+    text-transform: uppercase;
+    color: white;
+}
+.contato .contato-span{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.75);
+    display: block;
+    width: 165px;
+    margin: 0 auto 20px;
+}  

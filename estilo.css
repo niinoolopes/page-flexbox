@@ -265,7 +265,7 @@ ul.header-menu li   {
     width: 165px;
     margin: 0 auto 20px;
  }
- .portifolio-colecao{
+ .conhecimento-colecao {
      width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -277,18 +277,12 @@ ul.header-menu li   {
     border-radius: 5px;
  }
  @media screen and (max-width: 550px) {
-    .potifolio-colecao{
+    .conhecimento-colecao{
      width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    }
-    .conhecimento .duas {
-        width:none;
     } 
-    .conhecimento img{ 
-
-    }
 }
 
 /*----- ----- ----- ----- ----- */

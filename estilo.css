@@ -8,18 +8,19 @@ p{
 h2{
     margin: 0;
 }
+
+/*----- ----- ----- ----- ----- */
 /*header*/
-.header{
+ .header{
     width: 100%;
     background: url(imagem1.jpg) top center;
     background-size: cover;
     opacity: 0.65;
     padding-top: 70px;
-}
-@media screen and (max-width: 550px) { 
-}
-
-.top-fixed{
+ }
+ @media screen and (max-width: 550px) { 
+ }
+ .top-fixed{
     position: fixed;
     width: 100%;
     display: inline-flex;
@@ -31,12 +32,12 @@ h2{
     top: 0;
 }
 
-
-
-
+/*----- ----- ----- ----- ----- */
 /*logo*/
  img.header-logo{
 }
+
+/*----- ----- ----- ----- ----- */
 /*menu*/
  ul.header-menu {
     margin: 0;
@@ -45,70 +46,68 @@ h2{
     background-color: rgba(255, 255, 255, 0.25);
     display: flex;
     flex-wrap: wrap;
-}
-ul.header-menu li   {
+ }
+ ul.header-menu li   {
     margin: 0;
     padding: 10px;
     font-weight: bold;
     display: inline-block;
     transition: 0.5s;
     border-left: 1px solid rgba(0, 0, 0, 0.50);
-}
+ }
 
  ul.header-menu li:hover{
     background-color: rgba(255, 0, 0, 0.75);
     transition: 0.5s
-}
+ }
  ul.header-menu li a{
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-}
+ }
+    /* 
+    /*logo*//*
+    .header img.header-logo{
+    }
+    /*menu*//*
+    .header ul.header-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: rgba(255, 255, 255, 0.18);
+        float: right;
+        display: flex;
+    }
+    .header ul.header-menu li{
+        margin: 0;
+        padding: 10px;
+        font-weight: bold;
+        display: inline-block;
+        transition: 0.5s;
+        border-left: 1px solid rgba(0, 0, 0, 0.50);
+    }
+    .header ul.header-menu li:hover{
+        background-color: rgba(255, 0, 0, 0.75);
+        transition: 0.5s
+    }
+    .header ul.header-menu li a{
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+    } */
 
-
-/* 
-/*logo*//*
-.header img.header-logo{
-}
-/*menu*//*
-.header ul.header-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: rgba(255, 255, 255, 0.18);
-    float: right;
-    display: flex;
-}
-.header ul.header-menu li{
-    margin: 0;
-    padding: 10px;
-    font-weight: bold;
-    display: inline-block;
-    transition: 0.5s;
-    border-left: 1px solid rgba(0, 0, 0, 0.50);
-}
-.header ul.header-menu li:hover{
-    background-color: rgba(255, 0, 0, 0.75);
-    transition: 0.5s
-}
-.header ul.header-menu li a{
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
-@media screen and (max-width: 550px) {
+ @media screen and (max-width: 550px) {
     .top-fixed{
         flex-direction: column;
     } 
     .header-logo{
         display: none;
     }
-}
-/*imagem perfil*/
-.header .header-img-perfil{
+ }
+ /*imagem perfil*/
+ .header .header-img-perfil{
     display: block;
     margin: 60px auto 0;
     border: 2px solid white;
@@ -116,22 +115,22 @@ ul.header-menu li   {
     overflow: hidden;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.31);
-}
-.header .header-img-perfil img{
+ }
+ .header .header-img-perfil img{
     max-width: 100px;
     max-height: 100px;
-}
-/*titulo*/
-.header .header-titulo{
+ }
+ /*titulo*/
+ .header .header-titulo{
     width: 100%; 
     text-align: center;
-}
-.header .header-titulo h1{
+ }
+ .header .header-titulo h1{
     margin: 0;
     color:#fff;
-}
-/*descrição*/
-.header .header-texto {
+ }
+ /*descrição*/
+ .header .header-texto {
     width: 100%;
     margin: 30px;
     text-align: center;
@@ -168,6 +167,7 @@ ul.header-menu li   {
     Color: rgba(0, 0, 0, 0.40);
     font-family: monospace;
 }
+
 /*----- ----- ----- ----- ----- */
 /* trabalhos */
  .work{
@@ -315,3 +315,15 @@ ul.header-menu li   {
     align-items: center;
     justify-content: center;
 }  
+
+/*----- ----- ----- ----- ----- */
+/*footer*/
+ footer{      
+    width: 100%;
+    background: url(imagem1.jpg) top center;
+    background-size: cover;
+    opacity: 0.65;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+ }

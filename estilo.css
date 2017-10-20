@@ -1,4 +1,5 @@
 body{
+    margin: 0
 
 }
 p{
@@ -10,18 +11,67 @@ h2{
 /*header*/
 .header{
     width: 100%;
-    height: 450px;
     background: url(imagem1.jpg) top center;
-    background-size: contain;
+    background-size: cover;
     opacity: 0.65;
+    padding-top: 70px;
 }
-.flex{
+@media screen and (max-width: 550px) { 
+}
 
+.top-fixed{
+    position: fixed;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+    /* background-color: rgba(0, 0, 0, 0.34); */
+    /* margin: 0 5px; */
+    top: 0;
 }
+
+
+
+
 /*logo*/
-.header img.header-logo{
+ img.header-logo{
 }
 /*menu*/
+ ul.header-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.header-menu li   {
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.5s;
+    border-left: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+ ul.header-menu li:hover{
+    background-color: rgba(255, 0, 0, 0.75);
+    transition: 0.5s
+}
+ ul.header-menu li a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 
+/*logo*//*
+.header img.header-logo{
+}
+/*menu*//*
 .header ul.header-menu {
     margin: 0;
     padding: 0;
@@ -47,6 +97,15 @@ h2{
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+} */
+
+@media screen and (max-width: 550px) {
+    .top-fixed{
+        flex-direction: column;
+    } 
+    .header-logo{
+        display: none;
+    }
 }
 /*imagem perfil*/
 .header .header-img-perfil{
@@ -78,157 +137,187 @@ h2{
     text-align: center;
     color:#fff;
 }
+
 /*----- ----- ----- ----- ----- */
 /* formação */
-.feature{
+ .feature{
     width: 100%;
     padding: 80px 0;
     background-color: #f9f9f9;
 
-} 
-.feature .feature-titulo{
+ } 
+ .feature .feature-titulo{
     margin: 0;
     width: 100%;
     font-size: 30px;
     text-align: center; 
     text-transform: uppercase;
-}
-.feature .feature-span{
+ }
+ .feature .feature-span{
     border-bottom: 1px solid rgba(255, 0, 0, 0.75);
     display: block;
     width: 165px;
     margin: 0 auto 20px;
-}
-.feature .feature-icon{
+ }
+ .feature .feature-icon{
     display: block;
     margin: 15px auto;
-}
-.feature-descricao{
+ }
+ .feature-descricao{
     text-align: center;
     Color: rgba(0, 0, 0, 0.40);
     font-family: monospace;
 }
 /*----- ----- ----- ----- ----- */
 /* trabalhos */
-.work{
+ .work{
     width: 100%;
     padding: 80px 0;
     background-color: rgb(141, 164, 198);
-}
-.work .work-titulo{
+ }
+ .work .work-titulo{
     margin: 0;
     width: 100%;
     font-size: 30px;
     text-align: center; 
     text-transform: uppercase;
     color: white;
-}
-.work .work-span{
+ }
+ .work .work-span{
     border-bottom: 1px solid rgba(255, 0, 0, 0.75);
     display: block;
     width: 165px;
     margin: 0 auto 20px;
-}
-.work .work-img{
+ }
+ .work .work-img{
     display: block;
     margin: auto;
-}
-.work .work-paragrafos{
+ }
+ .work .work-paragrafos{
     text-align: center;
     margin: 20px;
     color: rgba(255, 255, 255, 0.71);
 }
+
 /*----- ----- ----- ----- ----- */
 /* portifolio */
-.portifolio{
+ .portifolio{
     width: 100%;
     padding: 80px 0;
     background-color: rgb(72, 72, 72);
-}
-.portifolio .portifolio-projetos{
+ }
+ .portifolio .portifolio-projetos{
     background-color: rgba(255, 255, 255, 0.91);
     padding: 20px 0;
     border-radius: 5px;
-}
-.portifolio .portifolio-img{
+    margin: 10px 0;
+ }
+ .portifolio .portifolio-img{
     display: block;
     margin: auto;
-}
-.portifolio .portifolio-titulo{ 
+    width: 100%;
+ }
+ .portifolio .portifolio-titulo{ 
     margin: 0;
     width: 100%;
     font-size: 30px;
     text-align: center; 
     text-transform: uppercase;
     color: white;
-}
-.portifolio .portifolio-span{
+ }
+ .portifolio .portifolio-span{
     border-bottom: 1px solid rgba(255, 0, 0, 0.75);
     display: block;
     width: 165px;
     margin: 0 auto 20px;
-}
-.portifolio .portifolio-nome{
+ }
+ .portifolio .portifolio-nome{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     /* margin: 0px; */
-}
-.portifolio .portifolio-descricao{
-    text-align: justify;
+ } 
+ .portifolio .portifolio-descricao{ 
+    text-align: center;
     font-family: fantasy;
     color: rgba(50, 50, 50 ,0.8);
-    width: 200px;
     display: block;
     margin: auto;
 }
+
 /*----- ----- ----- ----- ----- */
 /* conhecimento */
-.conhecimento{
+ .conhecimento{
     width: 100%;
     padding: 80px 0;
-}
-.conhecimento .conhecimento-titulo{ 
+ }
+ .conhecimento .conhecimento-titulo{ 
     margin: 0;
     width: 100%;
     font-size: 30px;
     text-align: center; 
     text-transform: uppercase; 
     color: rgb(72, 72, 72);
-}
-.conhecimento .conhecimento-span{
+ }
+ .conhecimento .conhecimento-span{
     border-bottom: 1px solid rgba(255, 0, 0, 0.75);
     display: block;
     width: 165px;
     margin: 0 auto 20px;
-}
-.conhecimento img{
+ }
+ .portifolio-colecao{
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+ }
+ .conhecimento img{
     display: block;
-    margin: auto;
+    margin: 15px auto;
     border-radius: 5px;
+ }
+ @media screen and (max-width: 550px) {
+    .potifolio-colecao{
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .conhecimento .duas {
+        width:none;
+    } 
+    .conhecimento img{ 
+
+    }
 }
+
 /*----- ----- ----- ----- ----- */
 /* contato */
-.contato{
+ .contato{
     width: 100%;
     padding: 80px 0; 
     background-color: rgb(172, 172, 172);   
-}
-.contato .contato-img{
-    display: block;
-    margin: auto;
-}
-.contato .contato-titulo{ 
+ }
+ .contato .contato-titulo{ 
     margin: 0;
     width: 100%;
     font-size: 30px;
     text-align: center; 
     text-transform: uppercase;
     color: white;
-}
-.contato .contato-span{
+ }
+ .contato .contato-span{
     border-bottom: 1px solid rgba(255, 0, 0, 0.75);
     display: block;
     width: 165px;
     margin: 0 auto 20px;
+ }
+ .contato .contato-rede-social img{
+    display: block; 
+    max-width: 10%;
+ }
+ .contato .contato-rede-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }  
